@@ -10,14 +10,15 @@ namespace CirculoDeSangre_DSI
     {
         public static void MenuIteracion()
         {
-            string valor;
+            
             int ingreso;
 
             Console.Clear();
             Console.WriteLine("\t- Circulo de Sangre -");
             Console.WriteLine("--------------------------");
             Console.WriteLine("- 1. Lista de los socios.");
-            Console.WriteLine("- 2. Registro de socios."); 
+            Console.WriteLine("- 2. Registro de socios.");
+            Console.WriteLine("- 3. Peticion de Banco De Sangre.");
             Console.WriteLine("- 0. Salir.");
             Console.WriteLine("--------------------------");
 
@@ -29,11 +30,14 @@ namespace CirculoDeSangre_DSI
 
         public static void Opciones(int resp)
         {
+            int rta;
+
             Console.Clear();
             switch (resp)
             {
                 case 1:
-                    Console.WriteLine("\t - Lista de los socios -"); 
+                    Console.WriteLine("\t - Lista de los socios -");
+                    Socio.CargarSocio();
                     Socio.MostrarSocios();
                     Volver();
                     break;
@@ -41,6 +45,52 @@ namespace CirculoDeSangre_DSI
                     Console.WriteLine("\t - Carga de socios -");
                     Socio.CargaDatos();
                     Volver();
+                    break;
+                case 3:
+                    Console.WriteLine("\n Peticiones del Banco De Sangre");
+                    Console.WriteLine("--------------------------");
+                    Console.WriteLine("- 1. Mostrar las peticiones.");
+                    Console.WriteLine("- 2. Registrar nueva peticion.");
+                    Console.WriteLine("- 3. Mostrar lista de prioridad de donantes..");
+                    Console.WriteLine("- 0. Salir.");
+                    Console.WriteLine("--------------------------");
+                    
+                    Console.Write("+ Ingrese su respuesta: ");
+                    rta = int.Parse(Console.ReadLine());
+
+                    switch (rta)
+                    {
+                        case 1:
+                            Console.Clear();
+                            Console.WriteLine("\t - Lista de Peticiones -");
+                            Peticion.MostrarPeticiones();
+                            Volver();
+                            break;
+
+                        case 2:
+                            Console.Clear();
+                            Console.WriteLine("\t - Registro de Peticiones -");
+                            Peticion.AtenderPeticion();
+                            Volver();
+                            break;
+
+                        case 3:
+                            Console.Clear();
+                            Console.WriteLine("\t - Listas de Prioridad -");
+                            Donacion.ListaDePrioridad();
+                            Volver();
+                            break;
+
+                        case 0:
+                            Console.Clear();
+                            Console.Write("Usted ha salido!");
+                            break;
+
+                        default:
+                            break;
+                    }
+
+
                     break;
                 case 0:
                     Console.Write("Ha salido del menu.");

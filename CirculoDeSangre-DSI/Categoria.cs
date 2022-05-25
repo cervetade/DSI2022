@@ -42,7 +42,7 @@ namespace CirculoDeSangre_DSI
                 }
 
                 Cat.Add(new Categoria() { Tipo = categ });
-                Console.WriteLine("+ Se le ha asignado al socio la categoria de: {0}.\n", categ);
+                
             }
 
         }

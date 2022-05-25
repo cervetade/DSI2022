@@ -7,11 +7,12 @@ using FluentValidation;
 
 namespace CirculoDeSangre_DSI
 {
-    public class Socio
+    public class Socio : Categoria
     {
         public static List<Socio> listaSocio = new List<Socio>()
         {
-            new Socio() {Nombre = "Tadeo", Apellido = "Cerve", Dni = "43299295" , FechaNacimiento = "20-05-2001", Domicilio = "Lavalle", Localidad = "San Fco" , Telefono = "3564411491", Mail = "tcerve@gmail.com", EnfermedadCronica = "n", MedicamentosTomados = "Ibu 1000" , GrupoSanguineo = "A-"  }
+            new Socio() {Nombre = "Tadeo", Apellido = "Cerve", Dni = "43299295" , FechaNacimiento = "20-05-2001", Domicilio = "Lavalle", Localidad = "San Fco" , Telefono = "3564411491", Mail = "tcerve@gmail.com", EnfermedadCronica = "n", MedicamentosTomados = "Ibu 1000" , GrupoSanguineo = "A-"  },
+            new Socio() {Nombre = "Mariano", Apellido = "Perez", Dni = "43299285" , FechaNacimiento = "20-03-2001", Domicilio = "Lavalle", Localidad = "San Fco" , Telefono = "3564411491", Mail = "tcerve@gmail.com", EnfermedadCronica = "n", MedicamentosTomados = "No Consume" , GrupoSanguineo = "B-"  }
 
         };
 
@@ -127,6 +128,7 @@ namespace CirculoDeSangre_DSI
                 Console.Write("\n+ El socio ingresado, acepta los terminos del circulo? ('y' = si /'n' = no): ");
                 rta = Console.ReadLine();
                 //rta = Validador.ValidacionYesNo(rtaCopy);
+
                 if(rta == "y")
                 {
                     listaSocio.Add(new Socio()
@@ -190,27 +192,38 @@ namespace CirculoDeSangre_DSI
 
 
         }
-   
 
-        public static void MostrarSocios()
+        public static void CargarSocio()
         {
-
             Categoria cat = new Categoria();
             for (int i = 0; i < listaSocio.Count; i++)
             {
-                Console.WriteLine("Socio nro: " + i);
-                Console.WriteLine("Nombre:" + listaSocio[i].nombre);
-                Console.WriteLine("Apellido: " + listaSocio[i].apellido);
-                Console.WriteLine("Grupo Sanguineo: " + listaSocio[i].grupoSanguineo);
-                Console.WriteLine("Dni: " + listaSocio[i].dni);
-                Console.WriteLine("Domicilio: " + listaSocio[i].domicilio);
-                Console.WriteLine("Localidad: " + listaSocio[i].localidad);
-                Console.WriteLine("Mail: " + listaSocio[i].mail);
-                Console.WriteLine("Enfermedad Cronica: " + listaSocio[i].enfermedadCronica);
-                Console.WriteLine("Medicamentos tomados: " + listaSocio[i].medicamentosTomados);
-
                 cat.CategoriaCalcular(listaSocio[i].EnfermedadCronica, listaSocio[i].FechaNacimiento, listaSocio[i].MedicamentosTomados);
             }
+        }
+
+        public static void MostrarSocios()
+        {
+            for (int i = 0; i < listaSocio.Count; i++)
+            {
+                Console.WriteLine("-------------------------------------------------------------");
+
+                Console.WriteLine("- Socio nro: " + i);
+                Console.WriteLine("- Nombre:" + listaSocio[i].nombre);
+                Console.WriteLine("- Apellido: " + listaSocio[i].apellido);
+                Console.WriteLine("- Grupo Sanguineo: " + listaSocio[i].grupoSanguineo);
+                Console.WriteLine("- Dni: " + listaSocio[i].dni);
+                Console.WriteLine("- Domicilio: " + listaSocio[i].domicilio);
+                Console.WriteLine("- Localidad: " + listaSocio[i].localidad);
+                Console.WriteLine("- Mail: " + listaSocio[i].mail);
+                Console.WriteLine("- Enfermedad Cronica: " + listaSocio[i].enfermedadCronica);
+                Console.WriteLine("- Medicamentos tomados: " + listaSocio[i].medicamentosTomados);
+                Console.WriteLine("+ Se le ha asignado al socio la categoria de: {0}.\n", Cat[i].Tipo);
+
+         
+
+            }
+            Console.WriteLine("-------------------------------------------------------------");
         }
 
 
