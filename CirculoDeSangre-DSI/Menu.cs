@@ -30,16 +30,36 @@ namespace CirculoDeSangre_DSI
 
         public static void Opciones(int resp)
         {
-            int rta;
+            int rta,rtaCase1;
 
             Console.Clear();
             switch (resp)
             {
                 case 1:
-                    Console.WriteLine("\t - Lista de los socios -");
-                    Socio.CargarSocio();
-                    Socio.MostrarSocios();
-                    Volver();
+                    Console.WriteLine("\t -1 Mostrar la lista de los socios -");
+                    Console.WriteLine("\t -2 Eliminar a algun socio -");
+                    Console.WriteLine("--------------------------");
+                    Console.Write("+ Ingrese su respuesta: ");
+
+                    rtaCase1 = int.Parse(Console.ReadLine());
+
+                    switch (rtaCase1)
+                    {
+                        case 1:
+                            Socio.CargarSocio();
+                            Socio.MostrarSocios();
+                            
+                            Volver();
+                            break;
+                        case 2:
+                            Socio.EliminarSocio();
+                            Volver();
+                            break;
+
+                    }
+
+                 
+                    
                     break;
                 case 2:
                     Console.WriteLine("\t - Carga de socios -");

@@ -11,8 +11,8 @@ namespace CirculoDeSangre_DSI
     {
         public static List<Socio> listaSocio = new List<Socio>()
         {
-            new Socio() {Nombre = "Tadeo", Apellido = "Cerve", Dni = "43299295" , FechaNacimiento = "20-05-2001", Domicilio = "Lavalle", Localidad = "San Fco" , Telefono = "3564411491", Mail = "tcerve@gmail.com", EnfermedadCronica = "n", MedicamentosTomados = "Ibu 1000" , GrupoSanguineo = "A-"  },
-            new Socio() {Nombre = "Mariano", Apellido = "Perez", Dni = "43299285" , FechaNacimiento = "20-03-2001", Domicilio = "Lavalle", Localidad = "San Fco" , Telefono = "3564411491", Mail = "tcerve@gmail.com", EnfermedadCronica = "n", MedicamentosTomados = "No Consume" , GrupoSanguineo = "B-"  }
+            new Socio() {Nombre = "Tadeo", Apellido = "Cerve", Dni = 43299295 , FechaNacimiento = "20-05-2001", Domicilio = "Lavalle", Localidad = "San Fco" , Telefono = "3564411491", Mail = "tcerve@gmail.com", EnfermedadCronica = "n", MedicamentosTomados = "Ibu 1000" , GrupoSanguineo = "A-"  },
+            new Socio() {Nombre = "Mariano", Apellido = "Perez", Dni = 43299285 , FechaNacimiento = "20-03-2001", Domicilio = "Lavalle", Localidad = "San Fco" , Telefono = "3564411491", Mail = "tcerve@gmail.com", EnfermedadCronica = "n", MedicamentosTomados = "No Consume" , GrupoSanguineo = "B-"  }
 
         };
 
@@ -21,7 +21,7 @@ namespace CirculoDeSangre_DSI
         private string nombre;
         private string apellido;
         private string grupoSanguineo;
-        private string dni;
+        private Int32 dni;
         private string fechaNacimiento;
         private string domicilio;
         private string telefono;
@@ -34,7 +34,7 @@ namespace CirculoDeSangre_DSI
         //ENCAPSULAMIENTO DE VARIABLES
         public string Nombre { get => nombre; set => nombre = value; }
         public string Apellido { get => apellido; set => apellido = value; }
-        public string Dni { get => dni; set => dni = value; }
+        public Int32 Dni { get => dni; set => dni = value; }
         public string FechaNacimiento { get => fechaNacimiento; set => fechaNacimiento = value; }
         public string Domicilio { get => domicilio; set => domicilio = value; }
         public string Localidad { get => localidad; set => localidad = value; }
@@ -47,8 +47,9 @@ namespace CirculoDeSangre_DSI
 
         public static void CargaDatos()
         {
-            string dni, telefono,nombre, apellido, fechaNac, domicilio, localidad, mail, grupoSanguineo, medicacionTomada, enfermedadCronica, medicacionPerm="";
+            string  telefono,nombre, apellido, fechaNac, domicilio, localidad, mail, grupoSanguineo, medicacionTomada, enfermedadCronica, medicacionPerm="";
             string rta;
+            int dni;
 
             int i = 1;
 
@@ -71,7 +72,7 @@ namespace CirculoDeSangre_DSI
                 //GrupoSanguineo = Validador.GrupoSanguineoValidar(GrupoSanguineo);
 
                 Console.Write("- Ingrese su numero de documento: ");
-                dni = Console.ReadLine();
+                dni = Int32.Parse(Console.ReadLine());
                 //DNI = Validador.DniValidar(DNI);
 
                 Console.Write("- Ingrese su fecha de nacimiento (dd-mm-aaaa): ");
@@ -227,7 +228,45 @@ namespace CirculoDeSangre_DSI
         }
 
 
+        public static void EliminarSocio()
+        {
+            if(Socio.listaSocio.Count > 0)
+            {
+                Int32 dniEliminar;
+                string linea;
 
+                var bajaSocio = new Socio();
+
+                Console.Write("\n\nIngrese el DNI de la persona a dar de baja: ");
+                linea = Console.ReadLine();
+                dniEliminar = Int32.Parse(linea);
+
+                foreach (var socio in listaSocio)
+                {
+
+                    if (dniEliminar.Equals(socio.Dni))
+                    {
+                        bajaSocio = socio;
+
+                    }
+
+                }
+
+                if (dniEliminar == bajaSocio.Dni)
+                {
+                    listaSocio.Remove(bajaSocio);
+
+                    Console.WriteLine("\nEmpleado fue dado de baja con exito!");
+                }
+
+                else
+                {
+                    Console.WriteLine("\nEmpleado NO existe.");
+                }
+
+            }
+
+        }
 
     }
 }
