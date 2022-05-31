@@ -12,7 +12,7 @@ namespace CirculoDeSangre_DSI
         public static List<Socio> listaSocio = new List<Socio>()
         {
             new Socio() {Nombre = "Tadeo", Apellido = "Cerve", Dni = 43299295 , FechaNacimiento = "20-05-2001", Domicilio = "Lavalle", Localidad = "San Fco" , Telefono = "3564411491", Mail = "tcerve@gmail.com", EnfermedadCronica = "n", MedicamentosTomados = "Ibu 1000" , GrupoSanguineo = "A-"  },
-            new Socio() {Nombre = "Mariano", Apellido = "Perez", Dni = 43299285 , FechaNacimiento = "20-03-2001", Domicilio = "Lavalle", Localidad = "San Fco" , Telefono = "3564411491", Mail = "tcerve@gmail.com", EnfermedadCronica = "n", MedicamentosTomados = "No Consume" , GrupoSanguineo = "B-"  }
+            new Socio() {Nombre = "Mariano", Apellido = "Perez", Dni = 43299285 , FechaNacimiento = "20-03-2001", Domicilio = "Lavalle", Localidad = "San Fco" , Telefono = "3564411491", Mail = "tcerve@gmail.com", EnfermedadCronica = "n", MedicamentosTomados = "n" , GrupoSanguineo = "B-"  }
 
         };
 

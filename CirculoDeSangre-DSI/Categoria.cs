@@ -24,12 +24,12 @@ namespace CirculoDeSangre_DSI
 
                 int edad = diasEnteros.Days / 365;
 
-                if (edad >= 18 && edad <= 56 && enfermedad == "n" && medicamentosTomados == "No Consume")
+                if (edad >= 18 && edad <= 56 && enfermedad == "n" && medicamentosTomados == "n")
                 {
                     categ = "Activo";
 
                 }
-                else if (edad >= 18 && edad <= 56 && enfermedad == "y" && medicamentosTomados != "No Consume")
+                else if (edad >= 18 && edad <= 56 && enfermedad == "y" && medicamentosTomados != "n")
                 {
                     categ = "Pasivo";
 
