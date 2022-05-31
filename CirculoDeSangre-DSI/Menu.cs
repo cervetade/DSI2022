@@ -38,6 +38,7 @@ namespace CirculoDeSangre_DSI
                 case 1:
                     Console.WriteLine("\t -1 Mostrar la lista de los socios -");
                     Console.WriteLine("\t -2 Eliminar a algun socio -");
+                    Console.WriteLine("\t -3 Volver al menu -");
                     Console.WriteLine("--------------------------");
                     Console.Write("+ Ingrese su respuesta: ");
 
@@ -53,6 +54,9 @@ namespace CirculoDeSangre_DSI
                             break;
                         case 2:
                             Socio.EliminarSocio();
+                            Volver();
+                            break;
+                        case 3:
                             Volver();
                             break;
 
@@ -103,7 +107,7 @@ namespace CirculoDeSangre_DSI
 
                         case 0:
                             Console.Clear();
-                            Console.Write("Usted ha salido!");
+                            Console.Write("Usted ha salido! Hasta pronto :)");
                             break;
 
                         default:
@@ -113,7 +117,7 @@ namespace CirculoDeSangre_DSI
 
                     break;
                 case 0:
-                    Console.Write("Ha salido del menu.");
+                    Console.Write("Ha salido del menu! Hasta pronto :)");
                     break;
                 default:
                     break;

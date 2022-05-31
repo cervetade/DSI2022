@@ -82,8 +82,9 @@ namespace CirculoDeSangre_DSI
         {
             for (int i = 0; i < Peticiones.Count(); i++)
             {
-                Console.WriteLine($"\n+ Peticion N°00{i} cuya fecha limite es {Peticiones[i].FechaLimite} solicitando {Peticiones[i].CantDonantes} asociados.");
+                Console.WriteLine($"\n -> Peticion [N°{i}] || Fecha limite -> {Peticiones[i].FechaLimite} || Solicitados -> {Peticiones[i].CantDonantes} asociado/s.");
             }
+            Console.WriteLine("\n-------------------------------------------------------------------------------------------");
         }
     }
 }
