@@ -32,12 +32,12 @@ namespace CirculoDeSangre_DSI
 
             Console.Write("- Ingrese la cantidad de donantes: ");
             cantidadS = Console.ReadLine();
-            cantidad = CantidadVal(cantidadS);
+            cantidad = CantidadValidar(cantidadS);
            
 
 
 
-            Console.Write($"- Ingrese una fecha limite no mayor a 30 dias de la fecha actual ({DateTime.Now.ToString("dd-MM-yyyy")}): ");
+            Console.Write($"- Ingrese una fecha limite no mayor a 30 dias [1 mes aprox] de la fecha actual ({DateTime.Now.ToString("dd-MM-yyyy")}): ");
             fechaLimite = Console.ReadLine();
             
 
@@ -60,7 +60,7 @@ namespace CirculoDeSangre_DSI
 
         }
 
-        public static int CantidadVal(string cantidadStr)
+        public static int CantidadValidar(string cantidadStr)
         {
             int cantidad;
             while (!Regex.Match(cantidadStr.ToString(), @"^\d{1}$|^\d{2}$").Success)
@@ -71,7 +71,7 @@ namespace CirculoDeSangre_DSI
             cantidad = Int32.Parse(cantidadStr);
             while (cantidad < 0 && cantidad > 10)
             {
-                Console.WriteLine("+ Ingrese una cantidad dentro del limite valido: ");
+                Console.WriteLine("+ Ingrese una cantidad dentro del limite valido.(El limite valido es mayor a 0 [cero] y menor a 10 [diez]): ");
                 cantidad = Int32.Parse(Console.ReadLine());
             }
 

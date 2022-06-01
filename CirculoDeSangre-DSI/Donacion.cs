@@ -78,6 +78,11 @@ namespace CirculoDeSangre_DSI
             }
         }
 
+        public static void fechaDonacion()
+        {
+            Console.WriteLine("Ultima fecha de donacion: ");
+
+        }
 
 
 

@@ -38,7 +38,8 @@ namespace CirculoDeSangre_DSI
                 case 1:
                     Console.WriteLine("\t -1 Mostrar la lista de los socios -");
                     Console.WriteLine("\t -2 Eliminar a algun socio -");
-                    Console.WriteLine("\t -3 Volver al menu -");
+                    Console.WriteLine("\t -3 Editar a algun socio -");
+                    Console.WriteLine("\t -4 Volver al menu -");
                     Console.WriteLine("--------------------------");
                     Console.Write("+ Ingrese su respuesta: ");
 
@@ -57,6 +58,10 @@ namespace CirculoDeSangre_DSI
                             Volver();
                             break;
                         case 3:
+                            Socio.EditarSocio();
+                            Volver();
+                            break;
+                        case 4:
                             Volver();
                             break;
 

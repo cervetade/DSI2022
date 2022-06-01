@@ -17,8 +17,7 @@ namespace CirculoDeSangre_DSI
         };
 
 
-        //DECLARACION DE VARIABLES
-        private string nombre;
+        private string? nombre;
         private string apellido;
         private string grupoSanguineo;
         private Int32 dni;
@@ -30,8 +29,9 @@ namespace CirculoDeSangre_DSI
         private string enfermedadCronica;
         private string medicamentosTomados;
         private string medicacionPermitida;
+        private string fechaDeUltimaDonacion;
+        private string idSocio;
 
-        //ENCAPSULAMIENTO DE VARIABLES
         public string Nombre { get => nombre; set => nombre = value; }
         public string Apellido { get => apellido; set => apellido = value; }
         public Int32 Dni { get => dni; set => dni = value; }
@@ -44,6 +44,8 @@ namespace CirculoDeSangre_DSI
         public string MedicacionPermitida { get => medicacionPermitida; set => medicacionPermitida = value; }
         public string Telefono { get => telefono; set => telefono = value; }
         public string GrupoSanguineo { get => grupoSanguineo; set => grupoSanguineo = value; }
+        public string FechaDeUltimaDonacion { get => fechaDeUltimaDonacion; set => fechaDeUltimaDonacion = value; }
+        public string IdSocio { get => idSocio; set => idSocio = value; }
 
         public static void CargaDatos()
         {
@@ -122,10 +124,11 @@ namespace CirculoDeSangre_DSI
                 }
                 else
                 {
-                    medicacionTomada = "No Consume";
+                    medicacionTomada = "n";
                 }
 
                 TerminosyCondiciones();
+
                 Console.Write("\n+ El socio ingresado, acepta los terminos del circulo? ('y' = si /'n' = no): ");
                 rta = Console.ReadLine();
                 //rta = Validador.ValidacionYesNo(rtaCopy);
@@ -266,6 +269,73 @@ namespace CirculoDeSangre_DSI
 
             }
 
+        }
+
+        public static void EditarSocio()
+        {
+            Int32 dniEditar;
+            string linea;
+            int rtaModificar;
+
+
+            Console.WriteLine("\nListado de socios:");
+            CargarSocio();
+
+            for (int i = 0; i < Socio.listaSocio.Count; i++)
+            {
+            
+                Console.WriteLine($"{Socio.listaSocio[i].Dni}   ||\t{Socio.listaSocio[i].Nombre} {Socio.listaSocio[i].Apellido}\t");
+                Console.WriteLine("-------------------------------\n");
+                
+            }
+
+            Console.WriteLine("Seleccione el dni del socio a modificar:");
+            linea = Console.ReadLine();
+            dniEditar = Int32.Parse(linea);
+
+            var editarSocio = new Socio();
+            foreach (var socio in listaSocio)
+            {
+
+                if (dniEditar.Equals(socio.Dni))
+                {
+                    editarSocio = socio;
+
+                    Console.WriteLine($"1 - Nombre: {editarSocio.nombre} ");
+                    Console.WriteLine($"2 - Apellido: {editarSocio.apellido}");
+                    Console.WriteLine($"3 - Grupo Sanguineo: {editarSocio.GrupoSanguineo}");
+                    //Console.WriteLine($"3 - Dni: {editarSocio.dni} ");
+                    Console.WriteLine($"4 - Domicilio: {editarSocio.Domicilio} ");
+                    Console.WriteLine($"5 - Localidad: {editarSocio.Localidad}");
+                    Console.WriteLine($"6 - Mail: {editarSocio.mail}");
+                    Console.WriteLine($"7 - Enfermedad cronica:{editarSocio.enfermedadCronica} ");
+                    Console.WriteLine($"8 - Medicamentos tomados: {editarSocio.medicamentosTomados} ");
+
+                    do
+                    {
+                        Console.WriteLine("Indique con numero el campo a modificar: ");
+                        rtaModificar = Int32.Parse(Console.ReadLine());
+
+                    } while (rtaModificar< 0 && rtaModificar >10);
+
+                    switch (rtaModificar)
+                    {
+                        case 1:
+                            Console.WriteLine("Indique el nombre nuevo: ");
+                            editarSocio.nombre = Console.ReadLine();
+                            break;
+                    }
+                       
+                            
+
+                }
+
+            }
+
+          
+            
+
+          
         }
 
     }
