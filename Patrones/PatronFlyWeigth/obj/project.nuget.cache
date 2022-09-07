@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "eo7YcdURdKMXDiE3sngatNgLjdtUNli+Ah6vvgKh+TxvVo3+pqCMgDpJdnweHrB3szQtgM3z3Ih+pZdD6ytXeA==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\usuario\\Desktop\\CERVE\\2022\\Diseño de Sistemas\\CirculoDeSangre\\DSI\\Patrones\\PatronFlyWeigth\\PatronFlyWeigth.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\usuario\\.nuget\\packages\\json.net\\1.0.33\\json.net.1.0.33.nupkg.sha512"
+  ],
+  "logs": []
+}

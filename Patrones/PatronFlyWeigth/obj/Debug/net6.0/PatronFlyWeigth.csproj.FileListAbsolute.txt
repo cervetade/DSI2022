@@ -1,0 +1,17 @@
+C:\Users\usuario\Desktop\CERVE\2022\Diseño de Sistemas\CirculoDeSangre\DSI\Patrones\PatronFlyWeigth\obj\Debug\net6.0\PatronFlyWeigth.csproj.AssemblyReference.cache
+C:\Users\usuario\Desktop\CERVE\2022\Diseño de Sistemas\CirculoDeSangre\DSI\Patrones\PatronFlyWeigth\obj\Debug\net6.0\PatronFlyWeigth.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\usuario\Desktop\CERVE\2022\Diseño de Sistemas\CirculoDeSangre\DSI\Patrones\PatronFlyWeigth\obj\Debug\net6.0\PatronFlyWeigth.AssemblyInfoInputs.cache
+C:\Users\usuario\Desktop\CERVE\2022\Diseño de Sistemas\CirculoDeSangre\DSI\Patrones\PatronFlyWeigth\obj\Debug\net6.0\PatronFlyWeigth.AssemblyInfo.cs
+C:\Users\usuario\Desktop\CERVE\2022\Diseño de Sistemas\CirculoDeSangre\DSI\Patrones\PatronFlyWeigth\obj\Debug\net6.0\PatronFlyWeigth.csproj.CoreCompileInputs.cache
+C:\Users\usuario\Desktop\CERVE\2022\Diseño de Sistemas\CirculoDeSangre\DSI\Patrones\PatronFlyWeigth\bin\Debug\net6.0\PatronFlyWeigth.exe
+C:\Users\usuario\Desktop\CERVE\2022\Diseño de Sistemas\CirculoDeSangre\DSI\Patrones\PatronFlyWeigth\bin\Debug\net6.0\PatronFlyWeigth.deps.json
+C:\Users\usuario\Desktop\CERVE\2022\Diseño de Sistemas\CirculoDeSangre\DSI\Patrones\PatronFlyWeigth\bin\Debug\net6.0\PatronFlyWeigth.runtimeconfig.json
+C:\Users\usuario\Desktop\CERVE\2022\Diseño de Sistemas\CirculoDeSangre\DSI\Patrones\PatronFlyWeigth\bin\Debug\net6.0\PatronFlyWeigth.dll
+C:\Users\usuario\Desktop\CERVE\2022\Diseño de Sistemas\CirculoDeSangre\DSI\Patrones\PatronFlyWeigth\bin\Debug\net6.0\PatronFlyWeigth.pdb
+C:\Users\usuario\Desktop\CERVE\2022\Diseño de Sistemas\CirculoDeSangre\DSI\Patrones\PatronFlyWeigth\bin\Debug\net6.0\Json.Net.dll
+C:\Users\usuario\Desktop\CERVE\2022\Diseño de Sistemas\CirculoDeSangre\DSI\Patrones\PatronFlyWeigth\obj\Debug\net6.0\PatronFlyWeigth.csproj.CopyComplete
+C:\Users\usuario\Desktop\CERVE\2022\Diseño de Sistemas\CirculoDeSangre\DSI\Patrones\PatronFlyWeigth\obj\Debug\net6.0\PatronFlyWeigth.dll
+C:\Users\usuario\Desktop\CERVE\2022\Diseño de Sistemas\CirculoDeSangre\DSI\Patrones\PatronFlyWeigth\obj\Debug\net6.0\refint\PatronFlyWeigth.dll
+C:\Users\usuario\Desktop\CERVE\2022\Diseño de Sistemas\CirculoDeSangre\DSI\Patrones\PatronFlyWeigth\obj\Debug\net6.0\PatronFlyWeigth.pdb
+C:\Users\usuario\Desktop\CERVE\2022\Diseño de Sistemas\CirculoDeSangre\DSI\Patrones\PatronFlyWeigth\obj\Debug\net6.0\PatronFlyWeigth.genruntimeconfig.cache
+C:\Users\usuario\Desktop\CERVE\2022\Diseño de Sistemas\CirculoDeSangre\DSI\Patrones\PatronFlyWeigth\obj\Debug\net6.0\ref\PatronFlyWeigth.dll
