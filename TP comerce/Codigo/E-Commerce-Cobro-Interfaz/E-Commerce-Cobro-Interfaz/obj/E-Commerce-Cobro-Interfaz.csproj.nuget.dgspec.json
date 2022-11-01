@@ -1,24 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\usuario\\Desktop\\E-Commerce-Cobro-Interfaz\\E-Commerce-Cobro-Interfaz\\E-Commerce-Cobro-Interfaz.csproj": {}
+    "C:\\Users\\usuario\\OneDrive - UTN San Francisco\\Escritorio\\CERVE\\2022\\Diseño de Sistemas\\DSI2022\\TP comerce\\Codigo\\E-Commerce-Cobro-Interfaz\\E-Commerce-Cobro-Interfaz\\E-Commerce-Cobro-Interfaz.csproj": {}
   },
   "projects": {
-    "C:\\Users\\usuario\\Desktop\\E-Commerce-Cobro-Interfaz\\E-Commerce-Cobro-Interfaz\\E-Commerce-Cobro-Interfaz.csproj": {
+    "C:\\Users\\usuario\\OneDrive - UTN San Francisco\\Escritorio\\CERVE\\2022\\Diseño de Sistemas\\DSI2022\\TP comerce\\Codigo\\E-Commerce-Cobro-Interfaz\\E-Commerce-Cobro-Interfaz\\E-Commerce-Cobro-Interfaz.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\usuario\\Desktop\\E-Commerce-Cobro-Interfaz\\E-Commerce-Cobro-Interfaz\\E-Commerce-Cobro-Interfaz.csproj",
+        "projectUniqueName": "C:\\Users\\usuario\\OneDrive - UTN San Francisco\\Escritorio\\CERVE\\2022\\Diseño de Sistemas\\DSI2022\\TP comerce\\Codigo\\E-Commerce-Cobro-Interfaz\\E-Commerce-Cobro-Interfaz\\E-Commerce-Cobro-Interfaz.csproj",
         "projectName": "E-Commerce-Cobro-Interfaz",
-        "projectPath": "C:\\Users\\usuario\\Desktop\\E-Commerce-Cobro-Interfaz\\E-Commerce-Cobro-Interfaz\\E-Commerce-Cobro-Interfaz.csproj",
+        "projectPath": "C:\\Users\\usuario\\OneDrive - UTN San Francisco\\Escritorio\\CERVE\\2022\\Diseño de Sistemas\\DSI2022\\TP comerce\\Codigo\\E-Commerce-Cobro-Interfaz\\E-Commerce-Cobro-Interfaz\\E-Commerce-Cobro-Interfaz.csproj",
         "packagesPath": "C:\\Users\\usuario\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\usuario\\Desktop\\E-Commerce-Cobro-Interfaz\\E-Commerce-Cobro-Interfaz\\obj\\",
+        "outputPath": "C:\\Users\\usuario\\OneDrive - UTN San Francisco\\Escritorio\\CERVE\\2022\\Diseño de Sistemas\\DSI2022\\TP comerce\\Codigo\\E-Commerce-Cobro-Interfaz\\E-Commerce-Cobro-Interfaz\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\usuario\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
-          "net6.0-windows7.0"
+          "net6.0-windows"
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
@@ -51,7 +51,8 @@
             "net47",
             "net471",
             "net472",
-            "net48"
+            "net48",
+            "net481"
           ],
           "assetTargetFallback": true,
           "warn": true,
@@ -63,7 +64,7 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.201\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.402\\RuntimeIdentifierGraph.json"
         }
       }
     }

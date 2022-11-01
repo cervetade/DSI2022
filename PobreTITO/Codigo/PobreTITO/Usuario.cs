@@ -30,8 +30,8 @@ namespace PobreTITO
                 int filas = command.ExecuteNonQuery();
                 MessageBox.Show("Usuario Registrado !");
 
-                //RegistrarProblema registrarusuario = new RegistrarProblema(CUIL);
-                //registrarusuario.Show();
+                RegistrarIncidente registrarusuario = new RegistrarIncidente(CUIL);
+                registrarusuario.Show();
 
             }
             catch
@@ -49,12 +49,13 @@ namespace PobreTITO
 
             string scc = ("Select *from usuario where CUIL = " + CUIL + " and Contraseña = '" + Contraseña + "'");
             MySqlCommand command = new MySqlCommand (scc, connectionDB);
+
             try
             {
                 int filas = command.ExecuteNonQuery ();
 
-                //RegistrarProblema registrarusuario = new RegistrarProblema(CUIL);
-                //registrarusuario.Show();
+                RegistrarIncidente registrarusuario = new RegistrarIncidente(CUIL);
+                registrarusuario.Show();
             }
 
             catch
@@ -66,14 +67,6 @@ namespace PobreTITO
         
         
         }
-
-
-
-
-
-
-
-
 
     }
 }
